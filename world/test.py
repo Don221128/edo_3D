@@ -1,5 +1,11 @@
 import position
-position.initialization()
-position.create_block(0,0,0)
-position.create_block(1,0,0)
-position.delete_block(0,0,0)
+from time import sleep
+index=-50
+for _ in range(100):
+    index+=1
+    position.create_block(index,0)
+sleep(5)
+index=-50
+for _ in range(100):
+    index+=1
+    position.delete_block(index,0)
